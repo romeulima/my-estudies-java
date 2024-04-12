@@ -1,9 +1,9 @@
 package com.romeulima.java.poo.product.entities;
 
 public class Product {
-    public String name;
-    public Double price;
-    public Integer quantity;
+    private String name;
+    private Double price;
+    private Integer quantity;
 
     public Product(String name, Double price, Integer quantity){
         this.name = name;
@@ -16,6 +16,30 @@ public class Product {
     }
 
     public Product(){}
+
+    public String getName(){
+        return this.name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public Double getPrice(){
+        return this.price;
+    }
+
+    public void setPrice(Double price){
+        this.price = price;
+    }
+
+    public Integer getQuantity(){
+        return this.quantity;
+    }
+
+    public void setQuantity(Integer quantity){
+        this.quantity = quantity;
+    }
 
     public Double totalValueInStock(){
         return this.price * this.quantity;
